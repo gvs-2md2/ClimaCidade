@@ -16,6 +16,35 @@ export default function Home({navigation}) {
   );
 }
 
+                <TouchableOpacity 
+                style={styles.btn}
+                onPress={() => navigation.navigate("SP")}>
+                    <Text style={styles.textBtn}>SÃO PAULO</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                style={styles.btn}
+                onPress={() => navigation.navigate("Santos")}>
+                    <Text style={styles.textBtn}>SANTOS</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                style={styles.btn}
+                onPress={() => navigation.navigate("Osasco")}>
+                    <Text style={styles.textBtn}>OSASCO</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                style={styles.btn}
+                onPress={() => navigation.navigate("Itanhaem")}>
+                    <Text style={styles.textBtn}>ITANHAÉM</Text>
+                </TouchableOpacity>
+            </View>
+           
+        </ScrollView>
+    );
+}
+
 const styles = StyleSheet.create({
     bloco:{
         marginTop:30
